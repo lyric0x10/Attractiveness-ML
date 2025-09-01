@@ -116,19 +116,6 @@ Key training details (from `train_model.py`):
 
 ---
 
-## ⚠️ Ethics, limitations & responsible use
-
-This is an inherently **sensitive and potentially harmful** application. Ratings of attractiveness are subjective and can encode, amplify, or weaponize biases (race, gender, age, photography style, etc.). Before using or sharing results:
-
-* **Do not deploy** this system for hiring, law enforcement, credit decisions, or any consequential decision-making.
-* Be transparent: collect consent for any human images, and document how labels were collected.&#x20;
-* Expect **bias**: dataset composition, labeler demographics and UI labeling choices will strongly influence predictions. Validate on balanced datasets and measure per-group error rates.&#x20;
-* Consider alternatives: focus on non-personal tasks, use anonymized or synthetic data, or avoid modeling attractiveness entirely if you cannot control for fairness and consent.
-
-If you plan to publish or demonstrate, include an ethics statement, dataset provenance, and limitations in the write-up.
-
----
-
 ## ✅ Tips & troubleshooting
 
 * If MediaPipe fails to detect a face, `label.py` falls back to a thumbnail without alignment — watch the console for messages.&#x20;
